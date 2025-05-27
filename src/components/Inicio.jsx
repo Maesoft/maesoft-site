@@ -8,8 +8,8 @@ function Inicio() {
   return (
     <section className="min-h-screen flex justify-center bg-gradient-to-br from-gray-500 via-black to-gray-800 overflow-hidden">
       <motion.div
-        initial={{ y: 60, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{ x: 60, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
         className="text-center px-4 max-w-2xl"
       >
@@ -17,9 +17,9 @@ function Inicio() {
           autoplay
           loop
           src={techAnimation}
-          className="h-100 mx-auto"
+          className="h-100 md:h-80 mx-auto"
         />
-        <h1 className="text-5xl md:text-6xl font-bold text-white -m-5 tracking-tight">
+        <h1 className="text-5xl font-bold text-white -m-5 tracking-tight">
           Bienvenido a Maesoft
         </h1>
         <TypeAnimation
@@ -44,7 +44,7 @@ function Inicio() {
           repeat={Infinity}
           style={{ fontSize: "3em", color: "gray" }}
         />
-        <p className="text-lg md:text-2xl mb-3">
+        <p className="text-lg mb-3">
           <span className="bg-gradient-to-r from-gray-400 to-gray-50 bg-clip-text text-transparent font-semibold">
             Aquí encontrarás soluciones tecnológicas a medida para tu negocio.
             Desde modernas aplicaciones web hasta sistemas de gestión
@@ -56,9 +56,9 @@ function Inicio() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-white text-black px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-xl transition-all duration-300"
+          className="bg-white text-black px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-xl hover:cursor-pointer transition-all duration-300"
         >
-          Ver proyectos
+          Ver Más
         </motion.button>
       </motion.div>
     </section>

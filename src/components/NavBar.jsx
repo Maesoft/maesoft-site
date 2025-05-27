@@ -14,19 +14,19 @@ function NavBar() {
 
   return (
     <nav className="bg-gray-900 font-mono font-light shadow-lg p-4 sticky top-0 z-50 border-b-2 border-gray-700">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container rounded-2xl mx-auto flex justify-between md:justify-around items-center">
         <div className="text-white font-[jaro] font-light text-3xl md:text-5xl flex flex-col items-center cursor-pointer select-none transition-transform duration-300 hover:scale-110">
           <img
             src={logo}
             alt="Logo"
-            className="absolute blur h-5 md:h-20 mb-0 transition-transform duration-300 hover:scale-110"
+            className="absolute blur h-10 md:h-8 mb-0 transition-transform duration-300 hover:scale-110"
           />
-          <img src={logo} alt="Logo" className="h-10 md:h-20 mb-0  " />
-          <div className="relative inline-block">
-            <span className="absolute blur text-white tracking-wide transition-transform duration-300 hover:scale-110">
+          <img src={logo} alt="Logo" className="h-10 md:h-8 mb-0  " />
+          <div className="relative flex items-center justify-center">
+            <span className="absolute left-0 top-0 text-xs text-white tracking-wide blur transition-transform duration-300 hover:scale-110 pointer-events-none">
               maesoft
             </span>
-            <span className="relative text-white tracking-wide -mt-2">
+            <span className="relative left-0 top-0 text-xs text-white tracking-wide">
               maesoft
             </span>
           </div>
@@ -37,7 +37,7 @@ function NavBar() {
         >
           ☰
         </button>
-        <ul className="hidden md:flex space-x-5 font-[Roboto] font-semibold text-sm md:text-2xl">
+        <ul className="hidden md:flex space-x-5 font-[Roboto] font-semibold text-sm">
           {navLinks.map(({ href, label }) => (
             <li key={href}>
               <a
@@ -58,7 +58,7 @@ function NavBar() {
               <a
                 href={href}
                 className="block text-white hover:text-gray-400 transition-colors duration-300"
-                onClick={() => setIsOpen(false)} 
+                onClick={() => setIsOpen(false)}
               >
                 {label}
               </a>
