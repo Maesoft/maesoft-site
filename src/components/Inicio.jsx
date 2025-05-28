@@ -4,7 +4,7 @@ import { motion as Motion } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
 import techAnimation from "../assets/esfera.json";
 
-function Inicio({ scrollToServicios }) {
+function Inicio() {
   return (
     <section className="min-h-screen flex justify-center bg-gradient-to-br from-gray-500 via-black to-gray-800 overflow-hidden">
       <Motion.div
@@ -46,14 +46,15 @@ function Inicio({ scrollToServicios }) {
             optimizar tus procesos con un enfoque 100% personalizado.
           </span>
         </p>
+        <a href="#services">
         <Motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={scrollToServicios}
           className="bg-white text-black px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-xl hover:cursor-pointer transition-all duration-300"
         >
           Ver Más
         </Motion.button>
+        </a>
       </Motion.div>
     </section>
   );
