@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 function Servicios() {
   return (
     <>
       <section className="bg-gray-100">
-        <motion.div
+        <Motion.div
           initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -14,7 +14,7 @@ function Servicios() {
               Conocé nuestros servicios
             </h1>
           </div>
-        </motion.div>
+        </Motion.div>
 
         <div className="bg-gray-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
           <div className="p-6 rounded-lg shadow-lg transition-shadow transition-transform duration-300 hover:shadow-xl hover:scale-105 hover:cursor-pointer">

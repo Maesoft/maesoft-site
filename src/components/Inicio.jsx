@@ -6,7 +6,7 @@ import techAnimation from "../assets/esfera.json";
 
 function Inicio() {
   return (
-    <section className="min-h-screen flex justify-center bg-gradient-to-br from-gray-500 via-black to-gray-800 overflow-hidden">
+    <section className="min-h-screen flex justify-center items-center bg-gradient-to-br from-gray-500 via-black to-gray-800 overflow-hidden">
       <Motion.div
         initial={{ x: 60, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -17,7 +17,7 @@ function Inicio() {
           autoplay
           loop
           src={techAnimation}
-          className="h-100 md:h-70 mx-auto"
+          className="h-50 md:h-70 mx-auto"
         />
         <h1 className="text-5xl font-bold text-white -mt-2 tracking-tight">
           Bienvenido a Maesoft

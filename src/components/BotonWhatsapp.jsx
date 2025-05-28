@@ -16,7 +16,7 @@ function BotonWhatsapp({ numero }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={wa} className="h-10 md:h-20" alt="Enviar Whatsapp" />
+        <img src={wa} className="h-10 md:h-15" alt="Enviar Whatsapp" />
       </a>
     </Motion.div>
   );

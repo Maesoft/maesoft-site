@@ -16,6 +16,7 @@ function NavBar() {
     <nav className="bg-gray-900 font-mono font-light shadow-lg p-4 sticky top-0 z-50 border-b-2 border-gray-700">
       <div className="container rounded-2xl mx-auto flex justify-between md:justify-around items-center">
         <div className="text-white font-[jaro] font-light text-3xl md:text-5xl flex flex-col items-center cursor-pointer select-none transition-transform duration-300 hover:scale-110">
+          <a href="#home">
           <img
             src={logo}
             alt="Logo"
@@ -30,6 +31,7 @@ function NavBar() {
               maesoft
             </span>
           </div>
+          </a>
         </div>
         <button
           className="text-white text-4xl md:hidden focus:outline-none"
