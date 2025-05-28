@@ -4,6 +4,7 @@ import Inicio from "./components/Inicio";
 import Servicios from "./components/Servicios";
 import Contacto from "./components/Contacto";
 import BotonWhatsapp from "./components/BotonWhatsapp";
+import Nosotros from "./components/Nosotros";
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Contacto />
       </div>
       <div id="about" className="scroll-mt-20 md:scroll-mt-10">
-        {/* Aquí puedes agregar el componente de Contacto */}
+        <Nosotros />
       </div>
       <BotonWhatsapp numero={5492244445033} />
     </>
