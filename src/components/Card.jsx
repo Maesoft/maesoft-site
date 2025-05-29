@@ -8,7 +8,7 @@ function Card({ imgs = [], title, content }) {
   const prevSlide = () => setIndex((prev) => (prev - 1 + imgs.length) % imgs.length);
 
   return (
-    <div className="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+    <div className="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden h-full">
       <div className="relative h-64">
         <AnimatePresence initial={false}>
           <Motion.img
