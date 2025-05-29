@@ -6,7 +6,7 @@ import Contacto from "./components/Contacto";
 import BotonWhatsapp from "./components/BotonWhatsapp";
 import Nosotros from "./components/Nosotros";
 import Proyectos from "./components/Proyectos";
-
+import Footer from "./components/Footer"
 function App() {
   return (
     <>
@@ -26,6 +26,7 @@ function App() {
       <div id="projects" className="scroll-mt-20 md:scroll-mt-10">
         <Proyectos />
       </div>
+      <Footer />
       <BotonWhatsapp numero={5492244445033} />
     </>
   );

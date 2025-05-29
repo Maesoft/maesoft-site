@@ -5,8 +5,7 @@ function Card({ imgs = [], title, content }) {
   const [index, setIndex] = useState(0);
 
   const nextSlide = () => setIndex((prev) => (prev + 1) % imgs.length);
-  const prevSlide = () =>
-    setIndex((prev) => (prev - 1 + imgs.length) % imgs.length);
+  const prevSlide = () => setIndex((prev) => (prev - 1 + imgs.length) % imgs.length);
 
   return (
     <div className="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
@@ -26,13 +25,13 @@ function Card({ imgs = [], title, content }) {
 
         <button
           onClick={prevSlide}
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 text-white p-2 rounded-full"
+          className="absolute top-1/2 left-2 transform -translate-y-1/2 hover:cursor-pointer bg-black/50 text-white p-2 rounded-full"
         >
           {"<"}
         </button>
         <button
           onClick={nextSlide}
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 text-white p-2 rounded-full"
+          className="absolute top-1/2 right-2 transform -translate-y-1/2 hover:cursor-pointer bg-black/50 text-white p-2 rounded-full"
         >
            {">"}
         </button>

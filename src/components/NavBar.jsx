@@ -7,9 +7,9 @@ function NavBar() {
   const navLinks = [
     { href: "#home", label: "Inicio" },
     { href: "#services", label: "Servicios" },
-    { href: "#about", label: "Contacto" },
-    { href: "#contact", label: "Nosotros" },
-    { href: "#blog", label: "Proyectos" },
+    { href: "#contact", label: "Contacto" },
+    { href: "#about", label: "Nosotros" },
+    { href: "#projects", label: "Proyectos" },
   ];
 
   return (

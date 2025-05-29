@@ -5,6 +5,7 @@ import linkedin from "../assets/linkedin.png";
 import whatsapp from "../assets/whatsapp.png";
 import github from "../assets/github.png";
 import tiktok from "../assets/tik-tok.png";
+import { motion as Motion } from "framer-motion";
 
 function Contacto() {
   const [formData, setFormData] = useState({
@@ -46,7 +47,15 @@ function Contacto() {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-500 via-black to-gray-800 text-white p-6">
+           
+
+    <section >
+      <Motion.div
+          initial={{ y: 60, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-500 via-black to-gray-800 text-white p-6"
+        >
       <h1 className="text-4xl font-bold mb-6">Contacto</h1>
       <p className="text-lg mb-4">
         Si tienes alguna consulta o necesitas más información, no dudes en
@@ -175,6 +184,7 @@ function Contacto() {
           </a>
         </div>
       </div>
+      </Motion.div>
     </section>
   );
 }
