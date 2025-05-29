@@ -23,7 +23,7 @@ function App() {
       <div id="about" className="scroll-mt-20 md:scroll-mt-10">
         <Nosotros />
       </div>
-      <div id="projects" className="scroll-mt-20 md:scroll-mt-10">
+      <div id="projects" className="scroll-mt-20 md:scroll-mt-15">
         <Proyectos />
       </div>
       <Footer />
