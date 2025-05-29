@@ -19,8 +19,8 @@ function Proyectos() {
       </Motion.div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-2">
         <Motion.div
-          initial={{ x: 60, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 60, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <Card
@@ -51,8 +51,8 @@ function Proyectos() {
           />
         </Motion.div>
         <Motion.div
-          initial={{ x: -60, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: -60, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <Card
@@ -74,8 +74,8 @@ function Proyectos() {
           />
         </Motion.div>
         <Motion.div
-          initial={{ x: 60, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 60, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <Card
