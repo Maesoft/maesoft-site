@@ -9,10 +9,10 @@ function Proyectos() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <h2 className="mb-4 mt-8 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+        <h2 className="mb-4 mt-8 text-4xl tracking-tight font-extrabold text-center text-gray-900">
           Proyectos
         </h2>
-        <p className="mb-8 font-light text-center text-gray-500 sm:text-xl dark:text-gray-400">
+        <p className="mb-8 font-light text-center text-gray-500 sm:text-xl ">
           Aqui encontraras algunos de nuestros proyectos realizados. Converti tu
           idea en un proyecto real!
         </p>

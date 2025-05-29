@@ -3,7 +3,7 @@ import nosotros from "../assets/nosotros.json";
 import { motion as Motion } from "framer-motion";
 function Nosotros() {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white">
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
         <Motion.div
           initial={{ y: 60, opacity: 0 }}
@@ -24,7 +24,7 @@ function Nosotros() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-center mb-8"
         >
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">
           Nosotros
         </h2>
         </Motion.div>
@@ -35,7 +35,7 @@ function Nosotros() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-center mb-8"
         >
-        <p className="mb-8 font-light text-center text-gray-500 sm:text-xl dark:text-gray-400">
+        <p className="mb-8 font-light text-center text-gray-500 sm:text-xl">
           Maesoft se fundó con el propósito de brindar soluciones tecnológicas
           integrales a emprendedores, comercios y pymes locales. El proyecto
           comenzó como un pequeño emprendimiento enfocado en reparaciones
