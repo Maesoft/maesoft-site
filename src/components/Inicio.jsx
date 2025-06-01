@@ -28,7 +28,7 @@ function Inicio() {
             "E-commerces", 2000,
             "Sitios Web", 2000,
             "Sistemas de Gestión", 2000,
-            "Sofware a medida", 2000,
+            "Software a medida", 2000,
             "Soluciones tecnologicas", 2000,
             "Sistemas Contables", 2000,
           ]}
